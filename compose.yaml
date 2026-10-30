@@ -1,0 +1,8 @@
+services:
+  excel-form:
+    build: .
+    ports:
+      - '127.0.0.1:8501:8501'
+    volumes:
+      - './output:/app/output'
+    init: true
